@@ -7,4 +7,8 @@ export default defineConfig({
   server: {
     open: './'
   },
+  output: {
+		//...,
+		intro: 'const ENVIRONMENT = "production";'
+	}
 })

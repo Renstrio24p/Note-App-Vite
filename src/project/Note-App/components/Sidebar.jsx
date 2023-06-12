@@ -10,9 +10,7 @@ export default function Sidebar(props){
                 className={Join([Styles.title,Note.id === props.CurrentNote.id ? Styles['selected-note'] : ''])}
                 onClick={() => props.setCurrentNoteID(Note.id)}
             >
-
                 <h4 className={Styles['text-snippet']}> <span className='em book'></span> {Note.body.split("\n")[0]}</h4>
-
                 <button 
                     className={Styles["delete-btn"]}
                     onClick={() => props.DeleteNote(Note.id)}
